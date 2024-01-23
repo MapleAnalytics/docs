@@ -1,0 +1,68 @@
+---
+title: Other Frameworks and Platform
+description: How to get started integrating Sel
+---
+
+{/* ## Prerequisites
+
+- [Create a workspace](/onboarding#2-create-your-first-workspace)
+- [Create an Website](/onboarding#2-create-your-first-api) */}
+
+
+You can integrate Safesight into any Web app that you are able to 
+add a custom script to.
+
+
+
+<Steps titleSize="h3">
+<Step  title="Install">
+
+Now install the `maple-sdk` package
+
+<Tabs>
+  <Tab title="npm">
+  ```bash
+    npm install maple-sdk
+    ```
+  </Tab>
+  <Tab title="pnpm">
+  ```bash
+    pnpm add maple-sdk
+    ```
+  </Tab>
+  <Tab title="yarn">
+  ```bash
+    yarn add maple-sdk
+    ```
+  </Tab>
+  <Tab title="bun">
+  ```bash
+    bun install maple-sdk
+    ```
+  </Tab>
+</Tabs>
+</Step>
+
+<Step  title="Intializing Safesight">
+
+Add the provider in your apps root root, 
+with your previously created websites token.
+
+```html
+<script defer data-websiteId="yourWebsiteID" src="https://unpkg.com/maple-sdk@latest/dist/tracker.js"></script>
+```
+
+</Step>
+
+<Step  title="Thats it!">
+
+That's already it! 
+Now just go to your web console and you will see debug logs showing you some page views logs.
+And once deployed data will come in!
+
+</Step>
+
+</Steps>
+
+
+

@@ -1,0 +1,105 @@
+---
+title: Remix.js
+description: How to get started with Remix
+---
+
+{/* ## Prerequisites
+
+- [Create a workspace](/onboarding#2-create-your-first-workspace)
+- [Create an Website](/onboarding#2-create-your-first-api) */}
+
+
+If you don't have a Remix.js app yet, you can quickly create one with the following command:
+
+```bash
+npx create-remix@latest
+```
+
+<Steps titleSize="h3">
+<Step  title="Install">
+
+Now install the `maple-sdk` package
+
+<Tabs>
+  <Tab title="npm">
+  ```bash
+    npm install maple-sdk
+    ```
+  </Tab>
+  <Tab title="pnpm">
+  ```bash
+    pnpm add maple-sdk
+    ```
+  </Tab>
+  <Tab title="yarn">
+  ```bash
+    yarn add maple-sdk
+    ```
+  </Tab>
+  <Tab title="bun">
+  ```bash
+    bun install maple-sdk
+    ```
+  </Tab>
+</Tabs>
+</Step>
+
+<Step  title="Intializing Safesight">
+
+Add the provider in your apps root root, 
+with your previously created websites token.
+
+```ts /app/root.ts
+import { Analytics } from 'maple-sdk/react'
+ 
+export default function App() {
+	return (
+		<html lang='en'>
+			<body>
+				<Analytics token={'yourWebsiteID'} />
+			</body>
+		</html>
+	)
+}
+```
+
+</Step>
+
+<Step title="Running your Remix app">
+
+<Tabs>
+  <Tab title="bun">
+  ```bash
+    bun run dev
+    ```
+  </Tab>
+  <Tab title="pnpm">
+  ```bash
+    pnpm run dev
+    ```
+  </Tab>
+  <Tab title="yarn">
+  ```bash
+    yarn run dev
+    ```
+  </Tab>
+  <Tab title="npm">
+  ```bash
+    npm run dev
+    ```
+  </Tab>
+</Tabs>
+</Step>
+
+<Step  title="Thats it!">
+
+Go to your web console and you will see debug logs showing you some page views logs.
+And once deployed data will come in!
+
+</Step>
+
+<Step title="Deploy and wait for data" />
+</Steps>
+
+
+
